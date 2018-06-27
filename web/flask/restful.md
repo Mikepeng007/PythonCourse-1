@@ -69,13 +69,13 @@ API与用户的通信协议，通常使用HTTP\(S\)协议。
 应该尽量将API部署在专用域名之下。
 
 ```
-http://api.rock.com
+http://api.chris.com
 ```
 
 如果确定API很简单，不会有大规模扩充，可以考虑放在主域名之下。
 
 ```
-http://www.rock.com/api/
+http://www.chris.com/api/
 ```
 
 ###### 版本
@@ -83,7 +83,7 @@ http://www.rock.com/api/
 应该将API的版本号放入URL。
 
 ```
-http://api.rock.com/v1/
+http://api.chris.com/v1/
 ```
 
 也有做法是将版本号放在HTTP的头信息中，但不如放在URL中方便和直观。GITHUB是这么搞的。
@@ -168,8 +168,8 @@ RESTful API最好做到Hypermedia，即返回结果中提供链接，连向其�
 ```
 {
     "link": {
-        "rel":   "collection https://www.rock.com/zoostudents",
-        "href":  "https://api.rock.com/students",
+        "rel":   "collection https://www.chirs.com/zoostudents",
+        "href":  "https://api.chris.com/students",
         "title": "List of students",
         "type":  "application/vnd.yourformat+json"
       }
